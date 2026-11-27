@@ -1,0 +1,11 @@
+{
+  "id": "day2-incident-drain",
+  "stage": "day2",
+  "title": "Set maintenance mode during incident and archive execution record to S3",
+  "allowed_utc_hours": [4, 22],
+  "requires_incident_id": true,
+  "steps": [
+    {"name": "enable_maintenance_flag", "param_name": "/runbooks/day0/maintenance_mode", "param_value": "true"},
+    {"name": "archive_run_record", "archive_to_s3": true}
+  ]
+}

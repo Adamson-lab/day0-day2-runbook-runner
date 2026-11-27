@@ -1,0 +1,10 @@
+{
+  "id": "day1-config-drift",
+  "stage": "day1",
+  "title": "Read SSM parameters and verify expected runtime values",
+  "allowed_utc_hours": [0, 23],
+  "steps": [
+    {"name": "read_service_endpoint", "param_name": "/runbooks/day0/service_url", "expected_value": "https://svc.internal.local"},
+    {"name": "read_maintenance_flag", "param_name": "/runbooks/day0/maintenance_mode", "expected_value": "false"}
+  ]
+}

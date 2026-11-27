@@ -1,0 +1,10 @@
+{
+  "id": "day0-ssm-bootstrap",
+  "stage": "day0",
+  "title": "Bootstrap baseline service parameters in AWS SSM",
+  "allowed_utc_hours": [0, 23],
+  "steps": [
+    {"name": "write_service_endpoint", "param_name": "/runbooks/day0/service_url", "param_value": "https://svc.internal.local"},
+    {"name": "write_maintenance_flag", "param_name": "/runbooks/day0/maintenance_mode", "param_value": "false"}
+  ]
+}
